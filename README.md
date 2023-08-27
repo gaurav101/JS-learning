@@ -146,3 +146,15 @@ Slide 17: Q&A (optional)
 - Reserve a slide for a Q&A session if you have time.
 
 Remember to use visuals, diagrams, and code snippets to illustrate the concepts effectively. Focus on delivering clear explanations to ensure your audience grasps the core ideas behind React.js architecture. Good luck with your presentation!
+
+
+```
+function formatPostcode(str) {
+	str = str.toUpperCase();
+	str = str.replace(/[^0-9a-z]/gi, '');
+	var parts = str.match(/^([A-Z]{1,2}\d{1,2}[A-Z]?)\s*(\d[A-Z]{2})$/);
+   parts.shift();
+	str = parts.join(' ');
+	return str;
+}
+```
